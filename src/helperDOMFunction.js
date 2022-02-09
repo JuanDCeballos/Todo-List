@@ -1,9 +1,13 @@
-function helperDOMFUnction(element, id, cssClass, content) {
-  const el = document.createElement(element);
-  el.setAttribute('id', id);
-  el.classList.add = cssClass;
-  ele.textContent = content;
-  return el;
+function createElement(parentElement, type, attributes) {
+  var element = document.createElement(type);
+  for (var key in attributes) {
+    if (key == 'class') {
+      element.classList.add.apply(element.classList, attributes[key]);
+    } else {
+      element[key] = attributes[key];
+    }
+  }
+  parentElement.appendChild(element);
 }
 
-export { helperDOMFUnction };
+export { createElement };
