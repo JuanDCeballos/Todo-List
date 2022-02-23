@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --armadilloColor: #423e37;
+  --anzacColor: #e3b23c;
+  --whiteRock: #edebd7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header #links {
+  display: block;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title {
+  flex: 2;
+  text-align: center;
+}
+
+.hamburger {
+  flex: 1;
+}
+
+header nav .project .formContainer {
+  display: none;
+}
+
+/* @media (max-width: 930px) {
+  body {
+    flex-direction: column;
+    background-color: rebeccapurple;
+  }
+} */
+
+@media (min-width: 930px) {
+  .container {
+    flex-direction: row;
+  }
+}
