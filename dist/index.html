@@ -4,9 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="header-top">
+      <h1 class="title">
+        <span class="todo">To</span><span class="list">Do</span>
+      </h1>
+      <div class="hamburger-container">
+        <p class="hamburger">X</p>
+      </div>
+    </div>
+    <div class="container">
+      <header class="left-panel">
+        <nav id="links">
+          <h2>Inbox</h2>
+          <div>
+            <p>All tasks</p>
+            <p>Today</p>
+          </div>
+          <h2>Projects</h2>
+          <div class="project">
+            <div class="projects"></div>
+            <div class="formContainer">
+              <form action="" id="formProject" class="form">
+                <input
+                  type="text"
+                  maxlength="20"
+                  placeholder="Enter project name"
+                  id="inputName"
+                />
+                <div class="butons">
+                  <button
+                    type="submit"
+                    id="acceptProject"
+                    class="form-button btn accept"
+                  >
+                    add
+                  </button>
+                  <button id="declinedProject" class="form-button btn declined">
+                    cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+            <button class="cta" id="add-project">Add a project</button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <p>This is where the main content should be</p>
+      </main>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
