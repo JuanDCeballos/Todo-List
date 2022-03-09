@@ -8,9 +8,47 @@
 }
 
 :root {
+  --white: #fff;
   --armadilloColor: #423e37;
   --anzacColor: #e3b23c;
   --whiteRock: #edebd7;
+  --grayOlive: #a6a596;
+}
+
+body {
+  background-color: var(--whiteRock);
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: var(--white);
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.accept {
+  background-color: var(--anzacColor);
+}
+
+.declined {
+  background-color: var(--armadilloColor);
+}
+
+.todo {
+  color: var(--armadilloColor);
+}
+
+.list {
+  color: var(--anzacColor);
+}
+
+.left-panel {
+  background-color: var(--grayOlive);
+  padding: 20px;
 }
 
 .container {
@@ -40,15 +78,14 @@ header nav .project .formContainer {
   display: none;
 }
 
-/* @media (max-width: 930px) {
-  body {
-    flex-direction: column;
-    background-color: rebeccapurple;
-  }
-} */
-
 @media (min-width: 930px) {
   .container {
     flex-direction: row;
+  }
+
+  header {
+    height: 100vh;
+    /* height: 100%; */
+    width: 20vw;
   }
 }
