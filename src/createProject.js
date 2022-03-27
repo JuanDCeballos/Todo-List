@@ -1,11 +1,19 @@
-import { createElement } from './helperDOMFunction.js';
+import uniqid from 'uniqid';
 
-function createProject(container, inputValue) {
-  createElement(container, 'div', {
-    id: 'myId',
-    class: ['uno', 'dos-tres'],
-    textContent: inputValue,
-  });
+function createProject(name) {
+  let todos = [];
+
+  const addTodo = (todo) => todos.push(todo);
+
+  return {
+    addTodo,
+    todos,
+  };
+  // arrayOfProjects.push({
+  //   projectTitle: name,
+  //   id: uniqid(),
+  //   tasks: [],
+  // });
 }
 
 export { createProject };

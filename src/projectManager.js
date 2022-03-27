@@ -9,3 +9,5 @@ function ProjectManager(title) {
     addProject,
   };
 }
+
+export { ProjectManager };
